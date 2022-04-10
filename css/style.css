@@ -1,0 +1,156 @@
+
+* {   text-decoration: none; box-sizing: border-box;margin: 0; padding: 0;list-style: none;}
+*, *:before, *:after {box-sizing: inherit;}
+body {color: #fff; font-size: 15px; line-height: 1.7; background-color:#162415;}
+
+/* Reusable Classes
+=========================== */
+h1 {font-weight: 700;font-size: 2.8em;}
+h2 {font-weight: 700;font-size: 1.6em;line-height: 1.1em;}
+h3 {font-weight: 700;font-size: 1.3em;}
+h4 {font-weight: 700;font-size: 1em;}
+p {margin: 1rem 0 1em 0;font-family:monospace;padding-left: 1rem;}
+a, a:hover, a:active, a:visited { color: white; }
+.text-primary { color: #f7c08a;}
+.lead {font-size: 20px;}
+
+/* Margin and Padding */
+.px-3{padding: 0 30px}
+.p-2{padding: 1rem}
+.my-2{padding: 2rem 0 }
+.btn2 {
+  background-color: rgb(43, 20, 13);padding: 20px;margin-top: 20px;margin-bottom: 20px;width: 92%;
+  transition: background-color 0.3s;border-radius: 4px;font-weight: bold;color: #fff;cursor: pointer;
+  border: 1px solid rgb(67, 60, 60); border-radius: .2rem;
+}
+.btn2:hover {background: rgba(0, 0, 0, .8);color: white;}
+.center{text-align: center;}
+.next-previous a{padding:1rem 3rem; display: inline-block; background-color: rgb(81, 106, 205); border-radius: .3rem;}
+.next-previous a:hover{background-color: rgba(47, 81, 193, 0.9); }
+.next-previous {float:right}
+
+/* Header
+=========================== */
+#header { background-color: rgb(205, 58, 58); position: fixed; z-index: 2;top: 0; left:0; width: 100%; box-shadow: 0px 0px 30px rgb(109, 69, 69);}
+#header #mainNav ul li a{display:block; padding: 2rem 2rem; float: left; }
+#header #mainNav ul li a:hover{background-color: rgba(0, 0, 0, .3);}
+#header #mainNavToggler {position:fixed; right: 1%;top:2%;display: none; cursor: pointer; z-index: 55}
+
+/* Main
+=========================== */
+#main article ul{margin: 0rem 0 0 2.45rem; }
+#main article ul li{list-style-type: disc;}
+
+#main{background-color:#162415;margin-top: 6rem;margin-left: 20;}
+#main #content {margin:2rem 1rem 0 20%; position: relative; overflow: hidden;}
+main section header svg{margin: -.1rem .5rem !important;}
+#main #content #sideNavToggler {position:absolute; left: -5px;top:20%;margin-left:-8px; padding: .5rem; display: block; cursor: pointer; display: none; }
+#main #content #article{border:1px solid white; padding:1rem 2rem;border:1px solid white; margin-bottom: 5rem;}
+
+/* Form Groups
+--------------- */
+#main #content .form-group{padding:.2rem 2rem; overflow: hidden;}
+#main #content .form-group label{ display: block;}
+/* Select input of type text passowrd and email only */
+#main #content .form-group input:not(input[type="submit"],input[type="radio"],input[type="checkbox"]){ padding:1rem 2rem; width: 90%; background-color: rgba(0, 0, 0, .1); border: 1px solid rgb(67, 60, 60); border-radius: .2rem;}
+#main #content .form-group textarea{ padding:1rem 2rem; width: 90%; background-color: rgba(0, 0, 0, .1); border: 1px solid rgb(67, 60, 60); border-radius: .2rem;}
+#main #content .form-group select{color:rgb(147, 127, 127);padding:1rem 2rem; width: 90%; background-color: rgba(0, 0, 0, .1); border: 1px solid rgb(67, 60, 60); border-radius: .2rem;}
+#main #content .form-group fieldset{color:rgb(147, 127, 127);padding:1rem 2rem;  background-color: rgba(0, 0, 0, .1); border: 1px solid rgb(67, 60, 60); border-radius: .2rem;}
+
+
+
+/*MAIN -> TABLE
+----------------*/
+table,
+tr,
+th,
+td {border-collapse: collapse;border: 1px white solid;padding: 1rem 0;}
+tr:hover:not(.th) {background-color: rgba(0, 0, 0, 0.26);}
+tr:nth-of-type(odd) {	background-color: rgb(45, 29, 18);}
+table {	width: 100%;text-align: left;	cursor: pointer; margin-bottom: 2rem;}
+th {text-align: center;	background-color: rgb(155, 89, 42);}
+td {	padding-left: 0.3rem;}
+
+/* Side Nav
+=========================== */
+#sideNav{
+  border-right: 3px solid white; 
+  width: 18%;
+  background-color: #232323;
+  height: 100%;
+  position: fixed;
+  top: 6rem;
+
+  overflow-y: auto;
+  z-index: 1;
+  padding-top: 1em;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+#sideNav::-webkit-scrollbar, ::-webkit-scrollbar  {display: none;}
+/* Hide scrollbar for IE, Edge and Firefox */
+#sideNav {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+#sideNav ul{margin-bottom: 10rem;}
+
+#sideNav ul li a{
+  display:inline-block;
+  padding: 0.3rem 1.5rem;
+  background-color: rgb(43, 33, 33);
+  width: 100%;
+  font-size: 1.1rem;
+  font-weight: normal;
+  color:#f6f9f7c6;
+  transition: transform .2s;
+}
+#sideNav h2{color:gray; margin:1rem 1rem 0rem; text-transform: capitalize;}
+#sideNav ul li a:hover{background-color: rgb(244, 230, 230); color:rgb(57, 41, 41); transform: scale(1.01); }
+#sideNav ul li i, #sideNav ul li svg {margin:0 .5rem}
+
+/* Footer
+=========================== */
+footer{position: relative; bottom: 0; left: 0; width: 100%; z-index: -1; text-align: center; border: 1px solid white; padding: 1rem 2rem;}
+
+
+/* Responsive*/
+
+@media  (min-width: 1400px) {
+  #sideNav ul li a{padding: 0.6rem 2rem;font-size: 1.3rem;color:#bfe3c3c6; }
+}
+
+@media  (max-width: 1400px) {
+  /* #sideNav{margin-left: 0; }
+  #main #content {margin:2rem 1rem 0 20%;}
+  #sideNav ul li{margin:0}
+  #sideNav ul li a{padding: 0.2rem 1.3rem;font-size: 1rem;}
+  #sideNav h2{margin:.9rem .3rem 0rem; } */
+}
+
+@media  (max-width: 1300px) {
+  #sideNav{border-right: 3px solid white; width: 20%; top:3rem}
+  #sideNav ul li a{font-size: .9rem;padding: 0rem .4rem ;font-family: serif;margin:0}
+  #sideNav h2{margin:0.6rem}
+  #header #mainNav ul li a{padding: 1rem 1rem; }
+  #main{margin-top: 4rem;margin-left: 20;}
+
+}
+
+@media  (max-width: 960px) {
+  #header #mainNav ul li a{ padding: .9rem .8rem; font-size: .9rem; }
+  #sideNav{left:-20%; transition: left .8s;}
+  #header #sideNavToggler {display:block; }
+  #main #content #sideNavToggler{display:block;}
+
+  #main{margin-top: 3.6rem;margin-left: 15;}
+  #sideNav ul li a{font-size: .9rem;padding: 0rem 0rem ;font-family: serif;margin:0}
+  #sideNav h2{margin:0.6rem}
+  #main #content {margin:2rem 1rem 0 1rem;z-index: 3;}
+}
+@media  (max-width: 940px) {
+  #header #mainNavToggler {display:block; }
+  #header  {top:-30%;z-index: 7; transition: top .5s;}
+  #main{margin-top: 0rem;}
+  #main #content {margin:0rem 1rem 0 1rem;z-index: 3;}
+}
