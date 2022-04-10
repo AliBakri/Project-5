@@ -1,4 +1,4 @@
-# Hotel
+# NotePedia: Template for documenting and note taking
 <div id="top"></div>
 
 
@@ -7,7 +7,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Everthing Tech](https://user-images.githubusercontent.com/42435299/161439443-385fe3fc-3b9e-4dbd-a38d-30f144939923.png)
+![Notepedia](https://user-images.githubusercontent.com/42435299/162623842-ce9f00a3-d389-45fb-843e-fb050fc09a3c.png)
 
 
 
@@ -20,6 +20,6 @@
 * [JavaScript](https://google.com/)
 
 ### Demo:
-[EverythingTech](https://gcodiac.github.io/hotel/)
+[Notepedia](https://gcodiac.github.io/notepedia/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
